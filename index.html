@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- <script src="plotly.min.js"></script> -->
+
+    <!-- Latest compiled and minified plotly.js JavaScript -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    </head>
+    <body>
+    <div class="navbar"><span>Real-Time Chart with Plotly.js</span></div>
+    <div class="wrapper">
+
+    
+        <!-- Plot line graph that reflects real time data -->
+        <div id="line-chart"></div>
+
+        <script src="lineGraph.js"></script>
+        <script>
+            plotLineChart()
+        </script>
+
+        <!-- Plot double bar graph for weather -->
+        <div id="double-bar-graph"></div>
+
+        <script src="doubleBarGraph.js"></script>
+        <script>
+            plotDoubleBarGraph()
+        </script>
+
+        <!-- Plot pie chart for visitors distribution -->
+        <div id="double-donut-graph"></div>
+
+        <script src="doubleDonutGraph.js"></script>
+        <script>
+            plotDoubleDonutGraph()
+        </script>
+
+        <!-- Plot table -->
+        <div id="table"></div>
+
+        <script src="table.js"></script>
+        <script>
+            plotTable()
+        </script>
+        
+        <!-- Plot a single bar graph -->
+        <div id="graph"></div>
+
+        <script src="graph.js"></script>
+        <script>
+            plotGraph()
+        </script>
+
+    </div>
+    </body>
+</html>
