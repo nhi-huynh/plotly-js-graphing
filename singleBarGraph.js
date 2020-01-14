@@ -1,4 +1,4 @@
-function plotGraph(){
+function plotSingleBarGraph(){
     var xValue = ['Product A', 'Product B', 'Product C'];
 
     var yValue = [20, 14, 23];
@@ -45,8 +45,8 @@ function plotGraph(){
         title: 'January 2013 Sales Report'
     };
 
-    Plotly.plot('graph', data, layout);
-    Plotly.update('graph', data, layout);
+    Plotly.plot('single-bar-graph', data, layout);
+    Plotly.update('single-bar-graph', data, layout);
 
 
 }

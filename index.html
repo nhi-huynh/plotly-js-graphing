@@ -1,7 +1,6 @@
 <html>
     <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <!-- <script src="plotly.min.js"></script> -->
 
     <!-- Latest compiled and minified plotly.js JavaScript -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -46,11 +45,28 @@
         </script>
         
         <!-- Plot a single bar graph -->
-        <div id="graph"></div>
+        <div id="single-bar-graph"></div>
 
-        <script src="graph.js"></script>
+        <script src="singleBarGraph.js"></script>
         <script>
-            plotGraph()
+            plotSingleBarGraph()
+        </script>
+
+        <!-- Get input and generate report button -->
+        <script src="peopleBarGraph.js"></script>
+
+        <p>Enter a date, then click generate report</p>
+
+        <form id="peopleReportForm">
+            <input type="date" id="startDateInput" name="startDateInput">
+            <input type="button" onclick="plotPeopleBarGraph(startDateInput.value)" value="Generate report">
+        </form>
+        
+        <!-- Plot a single bar graph -->
+        <div id="people-bar-graph"></div>
+
+        <script>
+            //plotPeopleBarGraph()
         </script>
 
     </div>
